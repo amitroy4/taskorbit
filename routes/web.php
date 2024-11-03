@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\DomainController;
+use App\Http\Controllers\Admin\HostingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/dashboard/client', ClientController::class);
     Route::resource('/dashboard/domain', DomainController::class);
+    Route::resource('/dashboard/hosting', HostingController::class);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
