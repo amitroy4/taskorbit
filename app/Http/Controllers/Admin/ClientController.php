@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\Client;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ClientController extends Controller
 {
@@ -12,7 +13,8 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return view('admin.client.client');
+        $clients = Client::all();
+        return view('admin.client.client',compact('clients'));
     }
 
     /**
@@ -26,9 +28,22 @@ class ClientController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+
     public function store(Request $request)
     {
-        //
+        // $validatedData = $request->validate([
+        //     'client_name' => 'required|string|max:255',
+        //     // Add validation rules for other fields
+        // ]);
+
+        // Handle file uploads if necessary
+        $data = $request->all();
+
+
+        // Store the client data
+        Client::create($data);
+
+        return redirect()->route('client.index')->with(['success', 'Client added successfully.']);
     }
 
     /**
@@ -60,6 +75,9 @@ class ClientController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $client = Client::findOrFail($id);
+        $client->delete();
+
+        return redirect()->route('client.index')->with('success', 'Client deleted successfully');
     }
 }
