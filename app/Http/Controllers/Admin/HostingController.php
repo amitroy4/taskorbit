@@ -6,14 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 
-class DomainController extends Controller
+class HostingController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.domain.domain');
+        return view('admin.hosting.hosting');
     }
 
     /**
@@ -21,7 +21,7 @@ class DomainController extends Controller
      */
     public function create()
     {
-        return view('admin.domain.adddomain');
+        return view('admin.hosting.addhosting');
     }
 
     /**

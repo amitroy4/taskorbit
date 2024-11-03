@@ -55,13 +55,12 @@
                         <a href="{{route('dashboard')}}">
                             <i class="fas fa-home"></i>
                             <p>Dashboard</p>
-                            <span class="caret"></span>
                         </a>
                     </li>
                     <!--Client Menue-->
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#client-nav">
-                            <i class="far fa-envelope"></i>
+                            <i class="fa fa-user"></i>
                             <p>Clients</p>
                             <span class="caret"></span>
                         </a>
@@ -69,12 +68,14 @@
                             <ul class="nav nav-collapse">
                                 <li>
                                     <a href="{{route('client.create')}}">
-                                        <span class="sub-item">Add Client</span>
+                                        <i class="fa fa-user-plus"></i>
+                                        <p>Add Client</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('client.index')}}">
-                                        <span class="sub-item">Clients List</span>
+                                        <i class="fa fa-users"></i>
+                                        <p>Clients List</p>
                                     </a>
                                 </li>
                             </ul>
@@ -83,7 +84,7 @@
                     <!--Domain and Hosting Menue-->
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#domain-nav">
-                            <i class="far fa-envelope"></i>
+                            <i class="fa fa-cloud"></i>
                             <p>Domain and Hosting</p>
                             <span class="caret"></span>
                         </a>
@@ -91,12 +92,14 @@
                             <ul class="nav nav-collapse">
                                 <li>
                                     <a href="{{route('domain.index')}}">
-                                        <span class="sub-item">Domain</span>
+                                        <i class="fa fa-globe"></i>
+                                        <p>Domain</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span class="sub-item">Hosting</span>
+                                    <a href="{{route('hosting.index')}}">
+                                        <i class="fa fa-server"></i>
+                                        <p>Hosting</p>
                                     </a>
                                 </li>
                             </ul>
@@ -105,7 +108,7 @@
                     <!--To-Do Menue-->
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#project-nav">
-                            <i class="far fa-envelope"></i>
+                            <i class="fa fa-briefcase"></i>
                             <p>Project</p>
                             <span class="caret"></span>
                         </a>
@@ -132,7 +135,7 @@
                     <!--To-Do Menue-->
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#selling-nav">
-                            <i class="far fa-envelope"></i>
+                            <i class="fa fa-receipt"></i>
                             <p>Selling</p>
                             <span class="caret"></span>
                         </a>
@@ -140,17 +143,20 @@
                             <ul class="nav nav-collapse">
                                 <li>
                                     <a href="email-inbox.html">
-                                        <span class="sub-item">Company Information</span>
+                                        <i class=" fa fa-address-card"></i>
+                                        <p>Company Information</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="email-compose.html">
-                                        <span class="sub-item">Company Documents</span>
+                                        <i class=" fa fa-file-alt"></i>
+                                        <p>Company Documents</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="email-detail.html">
-                                        <span class="sub-item">Hosting Package</span>
+                                        <i class=" fa fa-hdd"></i>
+                                        <p>Hosting Package</p>
                                     </a>
                                 </li>
                             </ul>
@@ -159,7 +165,7 @@
                     <!--Meeting Schedule Menue-->
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#user-nav">
-                            <i class="far fa-paper-plane"></i>
+                            <i class="fa fa-user-tag"></i>
                             <p>User Role</p>
                             <span class="caret"></span>
                         </a>
@@ -167,16 +173,19 @@
                             <ul class="nav nav-collapse">
                                 <li>
                                     <a href="messages.html">
-                                        <span class="sub-item">Create User</span>
+                                        <i class="fa fa-user-edit"></i>
+                                        <p>Create User</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="conversations.html">
-                                        <span class="sub-item">Role</span>
+                                        <i class="fa fa-id-badge"></i>
+                                        <p>Role</p>
                                     </a>
                                 </li><li>
                                     <a href="conversations.html">
-                                        <span class="sub-item">Permission</span>
+                                        <i class="fa fa-key"></i>
+                                        <p>Permission</p>
                                     </a>
                                 </li>
                             </ul>

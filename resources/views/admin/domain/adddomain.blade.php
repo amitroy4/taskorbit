@@ -15,7 +15,7 @@
                         <i class="icon-arrow-right"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Manage Domain</a>
+                        <a href="#">Add Domain</a>
                     </li>
                 </ul>
             </div>
@@ -36,10 +36,10 @@
                                     <div class="form-group col-md-4">
                                         <label for="client">Client</label>
                                         <div class="input-group">
-                                            <select id="client" class="form-control">
+                                            <select id="client_id" name="client_id" class="form-control">
                                                 <option value="">Select Client</option>
                                             </select>
-                                            <a href="{{ route('client.create') }}" class="btn btn-primary">
+                                            <a href="#" class="btn btn-primary">
                                                 <i class="fa fa-plus"></i></a>
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="date">Purchase Date</label>
-                                        <input id="purchaseDate" type="date" class="form-control">
+                                        <input id="purchaseDate" name="purchaseDate" type="date" class="form-control">
                                     </div>
                                 </div>
                                 <div class="box border p-3 rounded mt-4">
@@ -60,33 +60,33 @@
                                             <h4 class="title">Registrant Contact</h4>
                                         </div>
                                         <hr>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-4">
                                             <label class="form-label" for="firstname">First Name</label>
-                                            <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name">
+                                            <input id="reg_firstname" name="reg_firstname" type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="lastname">Last Name</label>
+                                            <input id="reg_lastname" name="reg_lastname" type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="city">City</label>
+                                            <input id="reg_city" name="reg_city" type="text" class="form-control" placeholder="Enter city">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="state">State</label>
+                                            <input id="reg_state" name="reg_state" type="text" class="form-control" placeholder="Enter State">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="zipcode">Zip Code</label>
+                                            <input id="reg_zipcode" name="reg_zipcode" type="text" class="form-control" placeholder="Enter Zip code">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="country">Country</label>
+                                            <input id="reg_country" name="reg_country" type="text" class="form-control" placeholder="Enter Country">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label class="form-label" for="lastname">Last Name</label>
-                                            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="city">City</label>
-                                            <input id="city" name="city" type="text" class="form-control" placeholder="Enter city">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="state">State</label>
-                                            <input id="state" name="state" type="text" class="form-control" placeholder="Enter State">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="zipcode">Zip Code</label>
-                                            <input id="zipCode" name="zipCode" type="text" class="form-control" placeholder="Enter Zip code">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="country">Country</label>
-                                            <input id="country" name="country" type="text" class="form-control" placeholder="Enter Country">
-                                        </div>
-                                        <div class="form-group col-md-12">
                                             <label class="form-label">Address</label>
-                                            <textarea class="form-control" id="" name="address" rows="2" placeholder="Enter address here"></textarea>
+                                            <textarea class="form-control" id="" name="reg_address" rows="2" placeholder="Enter address here"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -96,33 +96,33 @@
                                             <h4 class="title">Administration Contact</h4>
                                         </div>
                                         <hr>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-4">
                                             <label class="form-label" for="firstname">First Name</label>
-                                            <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name">
+                                            <input id="firstName" name="ad_firstname" type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="lastname">Last Name</label>
+                                            <input id="lastName" name="ad_lastname" type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="city">City</label>
+                                            <input id="city" name="ad_city" type="text" class="form-control" placeholder="Enter city">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="state">State</label>
+                                            <input id="state" name="ad_state" type="text" class="form-control" placeholder="Enter State">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="zipcode">Zip Code</label>
+                                            <input id="zipCode" name="ad_zipCode" type="text" class="form-control" placeholder="Enter Zip code">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="country">Country</label>
+                                            <input id="country" name="ad_country" type="text" class="form-control" placeholder="Enter Country">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label class="form-label" for="lastname">Last Name</label>
-                                            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="city">City</label>
-                                            <input id="city" name="city" type="text" class="form-control" placeholder="Enter city">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="state">State</label>
-                                            <input id="state" name="state" type="text" class="form-control" placeholder="Enter State">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="zipcode">Zip Code</label>
-                                            <input id="zipCode" name="zipCode" type="text" class="form-control" placeholder="Enter Zip code">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="country">Country</label>
-                                            <input id="country" name="country" type="text" class="form-control" placeholder="Enter Country">
-                                        </div>
-                                        <div class="form-group col-md-12">
                                             <label class="form-label">Address</label>
-                                            <textarea class="form-control" id="" name="address" rows="2" placeholder="Enter address here"></textarea>
+                                            <textarea class="form-control" id="" name="ad_address" rows="2" placeholder="Enter address here"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -132,33 +132,33 @@
                                             <h4 class="title">Technical Contact</h4>
                                         </div>
                                         <hr>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-4">
                                             <label class="form-label" for="firstname">First Name</label>
-                                            <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name">
+                                            <input id="firstName" name="tech_firstname" type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="lastname">Last Name</label>
+                                            <input id="lastName" name="tech_lastname" type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="city">City</label>
+                                            <input id="city" name="tech_city" type="text" class="form-control" placeholder="Enter city">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="state">State</label>
+                                            <input id="state" name="tech_state" type="text" class="form-control" placeholder="Enter State">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="zipcode">Zip Code</label>
+                                            <input id="zipCode" name="tech_zipCode" type="text" class="form-control" placeholder="Enter Zip code">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="country">Country</label>
+                                            <input id="country" name="tech_country" type="text" class="form-control" placeholder="Enter Country">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label class="form-label" for="lastname">Last Name</label>
-                                            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="city">City</label>
-                                            <input id="city" name="city" type="text" class="form-control" placeholder="Enter city">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="state">State</label>
-                                            <input id="state" name="state" type="text" class="form-control" placeholder="Enter State">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="zipcode">Zip Code</label>
-                                            <input id="zipCode" name="zipCode" type="text" class="form-control" placeholder="Enter Zip code">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="country">Country</label>
-                                            <input id="country" name="country" type="text" class="form-control" placeholder="Enter Country">
-                                        </div>
-                                        <div class="form-group col-md-12">
                                             <label class="form-label">Address</label>
-                                            <textarea class="form-control" id="" name="address" rows="2" placeholder="Enter address here"></textarea>
+                                            <textarea class="form-control" id="" name="tech_address" rows="2" placeholder="Enter address here"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -168,33 +168,33 @@
                                             <h4 class="title">Billing Contact</h4>
                                         </div>
                                         <hr>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-4">
                                             <label class="form-label" for="firstname">First Name</label>
-                                            <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name">
+                                            <input id="firstName" name="bill_firstname" type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="lastname">Last Name</label>
+                                            <input id="lastName" name="bill_lastname" type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="city">City</label>
+                                            <input id="city" name="bill_city" type="text" class="form-control" placeholder="Enter city">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="state">State</label>
+                                            <input id="state" name="bill_state" type="text" class="form-control" placeholder="Enter State">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="zipcode">Zip Code</label>
+                                            <input id="zipCode" name="bill_zipCode" type="text" class="form-control" placeholder="Enter Zip code">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="form-label" for="country">Country</label>
+                                            <input id="country" name="bill_country" type="text" class="form-control" placeholder="Enter Country">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label class="form-label" for="lastname">Last Name</label>
-                                            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="city">City</label>
-                                            <input id="city" name="city" type="text" class="form-control" placeholder="Enter city">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="state">State</label>
-                                            <input id="state" name="state" type="text" class="form-control" placeholder="Enter State">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="zipcode">Zip Code</label>
-                                            <input id="zipCode" name="zipCode" type="text" class="form-control" placeholder="Enter Zip code">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label class="form-label" for="country">Country</label>
-                                            <input id="country" name="country" type="text" class="form-control" placeholder="Enter Country">
-                                        </div>
-                                        <div class="form-group col-md-12">
                                             <label class="form-label">Address</label>
-                                            <textarea class="form-control" id="" name="address" rows="2" placeholder="Enter address here"></textarea>
+                                            <textarea class="form-control" id="" name="bill_address" rows="2" placeholder="Enter address here"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -206,10 +206,10 @@
                                         <hr>
                                         <div class="form-group col-md-4">
                                             <label class="form-label" for="personName">Name</label>
-                                            <input id="name" name="name" type="text" class="form-control" placeholder="Enter Name">
+                                            <input id="personName" name="personName" type="text" class="form-control" placeholder="Enter Name">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="form-label" for="lastname">Email</label>
+                                            <label class="form-label" for="email">Email</label>
                                             <input id="email" name="email" type="email" class="form-control" placeholder="Enter Email">
                                         </div>
                                         <div class="form-group col-md-4">
@@ -238,7 +238,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-3">
-                                        <label for="currencyType">Receiving Currency Type</label>
+                                        <label for="currencyType">Currency Type</label>
                                         <select id="currencyType" class="form-control" name="currency_type">
                                             <option value="">Select Currency Type</option>
                                             <option value="usd">USD</option>
