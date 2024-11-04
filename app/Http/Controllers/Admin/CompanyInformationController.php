@@ -3,18 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Client;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpKernel\Event\ViewEvent;
 
-class DomainController extends Controller
+class CompanyInformationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.domain.domain');
+        return view('admin.company.companyinformation');
     }
 
     /**
@@ -22,8 +20,7 @@ class DomainController extends Controller
      */
     public function create()
     {
-        $clients = Client::all();
-        return view('admin.domain.adddomain',compact('clients'));
+        return view('admin.company.addcompanyinformation');
     }
 
     /**
