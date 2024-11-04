@@ -41,17 +41,17 @@
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="client_name">Client Name</label>
                                         <input id="client_name" type="text" class="form-control" placeholder="fill name"
-                                            name="client_name">
+                                            name="client_name" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="client_designation">Designation</label>
                                         <input id="client_designation" type="text" class="form-control"
-                                            placeholder="fill designation" name="client_designation">
+                                            placeholder="fill designation" name="client_designation" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="company_name">Company Name</label>
                                         <input id="company_name" type="text" class="form-control"
-                                            placeholder="fill company name" name="company_name">
+                                            placeholder="fill company name" name="company_name" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="company_address">Company Address</label>
@@ -61,7 +61,7 @@
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="company_phone">Company Phone</label>
                                         <input id="company_phone" type="text" class="form-control"
-                                            placeholder="fill company phone" name="company_phone">
+                                            placeholder="fill company phone" name="company_phone" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="company_website">Company Website</label>
@@ -140,26 +140,26 @@
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="organizational_name">Organization Name</label>
                                         <input id="organizational_name" type="text" class="form-control"
-                                            placeholder="fill name" name="organizational_name">
+                                            placeholder="fill name" name="organizational_name" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="organizational_phone_number">Organization Phone
                                             Number</label>
                                         <input id="organizational_phone_number" type="text" class="form-control"
                                             placeholder="fill organizational phone number"
-                                            name="organizational_phone_number">
+                                            name="organizational_phone_number" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="organizational_whatsapp_number">Organization
                                             WhatsApp Number</label>
                                         <input id="organizational_whatsapp_number" type="text" class="form-control"
                                             placeholder="fill organizational whatsapp number"
-                                            name="organizational_whatsapp_number">
+                                            name="organizational_whatsapp_number" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="organizational_email">Organization Email</label>
                                         <input id="organizational_email" type="email" class="form-control"
-                                            placeholder="fill organizational email" name="organizational_email">
+                                            placeholder="fill organizational email" name="organizational_email" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="organizational_address">Organizational
@@ -168,14 +168,12 @@
                                             placeholder="fill organizational address" name="organizational_address">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="organizational_website">Organizational
-                                            Website</label>
+                                        <label class="form-label" for="organizational_website">Organizational Website</label>
                                         <input id="organizational_website" type="text" class="form-control"
                                             placeholder="fill organizational website" name="organizational_website">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="organizational_fb_url">Organizational FB
-                                            URL</label>
+                                        <label class="form-label" for="organizational_fb_url">Organizational FB URL</label>
                                         <input id="organizational_fb_url" type="text" class="form-control"
                                             placeholder="fill organizational fb url" name="organizational_fb_url">
                                     </div>
@@ -185,14 +183,12 @@
                                             placeholder="fill organizational logo" name="organizational_logo">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="organizational_business_card">Organizational
-                                            Business Card</label>
+                                        <label class="form-label" for="organizational_business_card">Organizational Business Card</label>
                                         <input id="organizational_business_card" type="file" class="form-control"
                                             placeholder="fill Business Card" name="organizational_business_card">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="organizational_other_documents">Others
-                                            Documents</label>
+                                        <label class="form-label" for="organizational_other_documents">Others Documents</label>
                                         <input id="organizational_other_documents" type="file" class="form-control"
                                             placeholder="fill organizational other documents"
                                             name="organizational_other_documents">
@@ -203,12 +199,12 @@
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_name">Name</label>
                                         <input id="contact_name" type="text" class="form-control"
-                                            placeholder="fill name" name="contact_name">
+                                            placeholder="fill name" name="contact_name" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_designation">Designation</label>
                                         <input id="contact_designation" type="text" class="form-control"
-                                            placeholder="fill designation" name="contact_designation">
+                                            placeholder="fill designation" name="contact_designation" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_company">Company</label>
@@ -218,17 +214,17 @@
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_phone">Phone</label>
                                         <input id="contact_phone" type="text" class="form-control"
-                                            placeholder="fill phone" name="contact_phone">
+                                            placeholder="fill phone" name="contact_phone" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_whatsapp">WhatsApp</label>
                                         <input id="contact_whatsapp" type="text" class="form-control"
-                                            placeholder="fill whatsapp" name="contact_whatsapp">
+                                            placeholder="fill whatsapp" name="contact_whatsapp" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_email">Email</label>
                                         <input id="contact_email" type="email" class="form-control"
-                                            placeholder="fill email" name="contact_email">
+                                            placeholder="fill email" name="contact_email" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="contact_business_card">Business Card</label>
