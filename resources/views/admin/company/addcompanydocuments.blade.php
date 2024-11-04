@@ -34,49 +34,41 @@
                                 @method("POST")
                                 <div class="row">
                                     <div class="form-group col-md-4">
-                                        <label class="form-label" for="company_name">Company Name</label>
-                                        <input id="company_name" name="company_name" type="text" class="form-control" placeholder="Company Name">
+                                        <label class="form-label" for="official_logo">Official Logo</label>
+                                        <input id="official_logo" name="official_logo[]" type="file" class="form-control" multiple>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="official_letterhead">Official Letterhead</label>
+                                        <input id="official_letterhead" name="official_letterhead[]" type="file" class="form-control" multiple>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="trade_license_number">Trade License Number</label>
+                                        <input id="trade_license_number" name="trade_license_number" type="text" class="form-control" placeholder="Trade License Number">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="trade_license_image">Trade License Image</label>
+                                        <input id="trade_license_image" name="trade_license_image" type="file" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="tin_number">TIN Number</label>
+                                        <input id="tin_number" name="tin_number" type="text" class="form-control" placeholder="TIN Number">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="tin_image">TIN Image</label>
+                                        <input id="tin_image" name="tin_image" type="file" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="bin_number">BIN Number</label>
+                                        <input id="bin_number" name="bin_number" type="text" class="form-control" placeholder="BIN Number">
                                     </div>
 
                                     <div class="form-group col-md-4">
-                                        <label class="form-label" for="company_address">Address</label>
-                                        <input id="company_address" name="company_address" type="text" class="form-control" placeholder="Company Address">
+                                        <label class="form-label" for="bin_image">BIN Image</label>
+                                        <input id="bin_image" name="bin_image" type="file" class="form-control">
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label class="form-label" for="contact_number">Contact Number</label>
-                                        <input id="contact_number" name="contact_number" type="text" class="form-control" placeholder="Contact Number">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="whatsapp_number">WhatsApp Number</label>
-                                        <input id="whatsapp_number" name="whatsapp_number" type="text" class="form-control" placeholder="WhatsApp Number">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="email_address">Email Address</label>
-                                        <input id="email_address" name="email_address" type="email" class="form-control" placeholder="Email Address">
-                                    </div>
-
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="website">Website</label>
-                                        <input id="website" name="website" type="url" class="form-control" placeholder="Website URL">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="fb_url">Facebook URL</label>
-                                        <input id="fb_url" name="fb_url" type="url" class="form-control" placeholder="Facebook URL">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="main_logo">Main Logo</label>
-                                        <input id="main_logo" name="main_logo" type="file" class="form-control">
-                                        <img id="main_logo_preview" alt="Main Logo Preview" width="100" class="mb-2 d-none mt-2">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="secondary_logo">Secondary Logo</label>
-                                        <input id="secondary_logo" name="secondary_logo" type="file" class="form-control">
-                                        <img id="secondary_logo_preview" alt="Secondary Logo Preview" width="100" class="mb-2 d-none mt-2">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label class="form-label" for="favicon">Favicon</label>
-                                        <input id="favicon" name="favicon" type="file" class="form-control">
-                                        <img id="favicon_preview" alt="Favicon Preview" width="50" class="mb-2 d-none mt-2">
+                                        <label class="form-label" for="agreement">Agreement</label>
+                                        <input id="agreement" name="agreement[]" type="file" class="form-control" multiple>
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex justify-content-end mt-4">

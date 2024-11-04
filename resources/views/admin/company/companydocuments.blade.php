@@ -14,7 +14,7 @@
 								<i class="icon-arrow-right"></i>
 							</li>
 							<li class="nav-item">
-								<a href="#">Company Information</a>
+								<a href="#">Company Documets</a>
 							</li>
 						</ul>
 					</div>
@@ -24,8 +24,8 @@
 							<div class="card">
 								<div class="card-header header-bg-1">
 									<div class="d-flex align-items-center">
-										<h4 class="card-title">Company Information List</h4>
-										<a href="{{route('company-information.create')}}" class="btn btn-secondary ms-auto">
+										<h4 class="card-title">Company Documets List</h4>
+										<a href="{{route('company-documents.create')}}" class="btn btn-secondary ms-auto">
                                             <i class="fa fa-plus"></i>
                                             Add
                                         </a>

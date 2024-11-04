@@ -194,21 +194,21 @@
                     <!--Meeting Schedule Menue-->
                     <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#setup-nav">
-                            <i class="fa fa-user-tag"></i>
+                            <i class="fa fa-cog"></i>
                             <p>Set Up</p>
                             <span class="caret"></span>
                         </a>
                         <div class="collapse" id="setup-nav">
                             <ul class="nav nav-collapse">
                                 <li>
-                                    <a href="messages.html">
-                                        <i class="fa fa-user-edit"></i>
+                                    <a href="{{route('company-information.index')}}">
+                                        <i class="fa fa-info-circle"></i>
                                         <p>Company  Information</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="conversations.html">
-                                        <i class="fa fa-id-badge"></i>
+                                    <a href="{{route('company-documents.index')}}">
+                                        <i class="fa fa-file"></i>
                                         <p>Company Documents</p>
                                     </a>
                                 </li>

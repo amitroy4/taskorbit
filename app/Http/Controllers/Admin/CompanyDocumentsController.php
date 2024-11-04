@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CompanyInformation extends Controller
+class CompanyDocumentsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.company.companyinformation');
+        return view('admin.company.companydocuments');
     }
 
     /**
@@ -20,7 +20,7 @@ class CompanyInformation extends Controller
      */
     public function create()
     {
-        return view('admin.company.addcompanyinformation');
+        return view('admin.company.addcompanydocuments');
     }
 
     /**
