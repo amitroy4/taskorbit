@@ -62,7 +62,15 @@
                                                     <tr>
                                                         <td>{{ $client->client_name ?? $client->contact_name }}</td>
                                                         <td>{{$client->client_designation ?? $client->contact_designation}}</td>
-                                                        <td>{{$client->company_name ?? $client->organizational_name}}</td>
+                                                        <td>
+                                                            @if($client->company_logo)
+                                                                <img src="{{ asset('storage/' . $client->company_logo) }}" alt="Company Logo" style="width: 50px; height: 50px; object-fit: cover;" />
+                                                            @endif
+                                                            @if($client->organizational_logo)
+                                                                <img src="{{ asset('storage/' . $client->organizational_logo) }}" alt="Company Logo" style="width: 50px; height: 50px; object-fit: cover;" />
+                                                            @endif
+                                                            <br>
+                                                            {{$client->company_name ?? $client->organizational_name}}</td>
                                                         <td>{{$client->company_phone ?? $client->organizational_phone_number}}</td>
                                                         <td>{{$client->company_email ?? $client->organizational_email}}</td>
                                                         <td>{{$client->company_website ?? $client->organizational_website}}</td>
@@ -82,7 +90,6 @@
                                                         </td>
                                                     </tr>
                                                 @endforeach
-
 											</tbody>
 										</table>
 									</div>
@@ -96,7 +103,8 @@
 @push('script')
 <script>
     $(document).ready(function () {
-        $('.delete-client').on('click', function () {
+        // Use event delegation to attach the click event to the parent element
+        $(document).on('click', '.delete-client', function () {
             var form = $(this).closest('form');
             deleteClient(form);
         });
@@ -133,5 +141,6 @@
     }
 </script>
 @endpush
+
 
 
