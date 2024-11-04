@@ -191,6 +191,30 @@
                             </ul>
                         </div>
                     </li>
+                    <!--Meeting Schedule Menue-->
+                    <li class="nav-item">
+                        <a data-bs-toggle="collapse" href="#setup-nav">
+                            <i class="fa fa-user-tag"></i>
+                            <p>Set Up</p>
+                            <span class="caret"></span>
+                        </a>
+                        <div class="collapse" id="setup-nav">
+                            <ul class="nav nav-collapse">
+                                <li>
+                                    <a href="messages.html">
+                                        <i class="fa fa-user-edit"></i>
+                                        <p>Company  Information</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="conversations.html">
+                                        <i class="fa fa-id-badge"></i>
+                                        <p>Company Documents</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
