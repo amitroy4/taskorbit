@@ -1,215 +1,100 @@
 @extends('layouts.admin')
 @section('content')
 <div class="container">
-				<div class="page-inner">
-					<div class="page-header">
-						<h3 class="fw-bold mb-3">Company</h3>
-						<ul class="breadcrumbs mb-3">
-							<li class="nav-home">
-								<a href="#">
-									<i class="icon-home"></i>
-								</a>
-							</li>
-							<li class="separator">
-								<i class="icon-arrow-right"></i>
-							</li>
-							<li class="nav-item">
-								<a href="#">Company Documets</a>
-							</li>
-						</ul>
-					</div>
-					<div class="row">
+    <div class="page-inner">
+        <div class="row">
+            <div class="page-header">
+                <h3 class="fw-bold mb-3">Company</h3>
+                <ul class="breadcrumbs mb-3">
+                    <li class="nav-home">
+                        <a href="#">
+                            <i class="icon-home"></i>
+                        </a>
+                    </li>
+                    <li class="separator">
+                        <i class="icon-arrow-right"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Add Company Information</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                <div class="card">
+                    <div class="row">
+                        <div class="card-header header-bg-1">
+                            <div class="d-flex">
+                                <h4 class="card-title">Add Information</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form class="" action="#" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                @method("POST")
+                                <div class="row">
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="official_logo">Official Logo</label>
+                                        <input id="official_logo" name="official_logo[]" type="file" class="form-control" multiple>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="official_letterhead">Official Letterhead</label>
+                                        <input id="official_letterhead" name="official_letterhead[]" type="file" class="form-control" multiple>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="trade_license_number">Trade License Number</label>
+                                        <input id="trade_license_number" name="trade_license_number" type="text" class="form-control" placeholder="Trade License Number">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="trade_license_image">Trade License Image</label>
+                                        <input id="trade_license_image" name="trade_license_image" type="file" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="tin_number">TIN Number</label>
+                                        <input id="tin_number" name="tin_number" type="text" class="form-control" placeholder="TIN Number">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="tin_image">TIN Image</label>
+                                        <input id="tin_image" name="tin_image" type="file" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="bin_number">BIN Number</label>
+                                        <input id="bin_number" name="bin_number" type="text" class="form-control" placeholder="BIN Number">
+                                    </div>
 
-						<div class="col-md-12">
-							<div class="card">
-								<div class="card-header header-bg-1">
-									<div class="d-flex align-items-center">
-										<h4 class="card-title">Company Documets List</h4>
-										<a href="{{route('company-documents.create')}}" class="btn btn-secondary ms-auto">
-                                            <i class="fa fa-plus"></i>
-                                            Add
-                                        </a>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="table-responsive">
-										<table id="add-row" class="display table table-striped table-hover" >
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th style="width: 10%">Action</th>
-												</tr>
-											</thead>
-											<tfoot>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Action</th>
-												</tr>
-											</tfoot>
-											<tbody>
-												<tr>
-													<td>Tiger Nixon</td>
-													<td>System Architect</td>
-													<td>Edinburgh</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Garrett Winters</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Ashton Cox</td>
-													<td>Junior Technical Author</td>
-													<td>San Francisco</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Cedric Kelly</td>
-													<td>Senior Javascript Developer</td>
-													<td>Edinburgh</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Airi Satou</td>
-													<td>Accountant</td>
-													<td>Tokyo</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Brielle Williamson</td>
-													<td>Integration Specialist</td>
-													<td>New York</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Herrod Chandler</td>
-													<td>Sales Assistant</td>
-													<td>San Francisco</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Rhona Davidson</td>
-													<td>Integration Specialist</td>
-													<td>Tokyo</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Colleen Hurst</td>
-													<td>Javascript Developer</td>
-													<td>San Francisco</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>Sonya Frost</td>
-													<td>Software Engineer</td>
-													<td>Edinburgh</td>
-													<td>
-														<div class="form-button-action">
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
-															<button type="button" data-bs-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-																<i class="fa fa-times"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="bin_image">BIN Image</label>
+                                        <input id="bin_image" name="bin_image" type="file" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-label" for="agreement">Agreement</label>
+                                        <input id="agreement" name="agreement[]" type="file" class="form-control" multiple>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-end mt-4">
+                                    <button type="Submit" class="ms-2 btn btn-secondary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 @push('script')
+<script>
+    const contactNumberInput = document.getElementById('contact_number');
+
+    contactNumberInput.addEventListener('keydown', function(event) {
+        if (event.key === ' ') {
+            event.preventDefault();
+            // Only add a comma if the last character is not already a comma or space
+            if (contactNumberInput.value && !contactNumberInput.value.endsWith(',')) {
+                contactNumberInput.value += ', ';
+            }
+        }
+    });
+</script>
 @endpush

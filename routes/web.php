@@ -33,8 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('/dashboard/client', ClientController::class);
     Route::resource('/dashboard/domain', DomainController::class);
     Route::resource('/dashboard/hosting', HostingController::class);
-    Route::resource('/dashboard/company-information',CompanyInformationController::class);
-    Route::resource('/dashboard/company-documents',CompanyDocumentsController::class);
+    Route::resource('/dashboard/companyinformation',CompanyInformationController::class);
+    Route::resource('/dashboard/companydocuments',CompanyDocumentsController::class);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

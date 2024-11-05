@@ -20,7 +20,7 @@ class CompanyDocumentsController extends Controller
      */
     public function create()
     {
-        return view('admin.company.addcompanydocuments');
+        //
     }
 
     /**
