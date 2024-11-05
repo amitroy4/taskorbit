@@ -41,4 +41,8 @@ class Client extends Model
         'contact_nid_image',
         'contact_other_documents',
     ];
+    public function domain()
+    {
+        return $this->hasMany(Domain::class);
+    }
 }
