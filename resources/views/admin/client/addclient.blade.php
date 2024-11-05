@@ -59,36 +59,6 @@
                                             placeholder="fill company address" name="company_address">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_phone">Company Phone</label>
-                                        <input id="company_phone" type="text" class="form-control"
-                                            placeholder="fill company phone" name="company_phone" required>
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_website">Company Website</label>
-                                        <input id="company_website" type="text" class="form-control"
-                                            placeholder="fill company website" name="company_website">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_email">Company Email</label>
-                                        <input id="company_email" type="email" class="form-control"
-                                            placeholder="fill company email" name="company_email">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_fb_url">Company FB url</label>
-                                        <input id="company_fb_url" type="text" class="form-control"
-                                            placeholder="fill company fb url" name="company_fb_url">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_logo">Company Logo</label>
-                                        <input id="company_logo" type="file" class="form-control"
-                                            placeholder="fill company logo" name="company_logo">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="business_card">Business Card</label>
-                                        <input id="business_card" type="file" class="form-control"
-                                            placeholder="fill Business Card" name="business_card">
-                                    </div>
-                                    <div class="form-group col-md-3">
                                         <label class="form-label" for="client_phone">Personal Phone</label>
                                         <input id="client_phone" type="text" class="form-control"
                                             placeholder="fill Client phone" name="client_phone">
@@ -99,20 +69,25 @@
                                             placeholder="fill Client email" name="client_email">
                                     </div>
                                     <div class="form-group col-md-3">
+                                        <label class="form-label" for="client_nid_number">NID Number</label>
+                                        <input id="client_nid_number" type="number" class="form-control"
+                                            placeholder="fill client nid number" name="client_nid_number">
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="form-label" for="client_mailing_address">Mailing Address</label>
                                         <textarea id="client_mailing_address" class="form-control"
                                             placeholder="fill client mailing address"
                                             name="client_mailing_address"></textarea>
                                     </div>
                                     <div class="form-group col-md-3">
+                                        <label class="form-label" for="business_card">Business Card</label>
+                                        <input id="business_card" type="file" class="form-control"
+                                            placeholder="fill Business Card" name="business_card">
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="form-label" for="client_passport_image">Passport Image</label>
                                         <input id="client_passport_image" type="file" class="form-control"
                                             placeholder="fill client passport image" name="client_passport_image">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="client_nid_number">NID Number</label>
-                                        <input id="client_nid_number" type="number" class="form-control"
-                                            placeholder="fill client nid number" name="client_nid_number">
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="client_nid_image">NID Image</label>
@@ -181,11 +156,6 @@
                                         <label class="form-label" for="organizational_logo">Organizational Logo</label>
                                         <input id="organizational_logo" type="file" class="form-control"
                                             placeholder="fill organizational logo" name="organizational_logo">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="organizational_business_card">Organizational Business Card</label>
-                                        <input id="organizational_business_card" type="file" class="form-control"
-                                            placeholder="fill Business Card" name="organizational_business_card">
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="organizational_other_documents">Others Documents</label>

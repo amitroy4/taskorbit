@@ -62,39 +62,6 @@
                                             value="{{ old('company_address', $client->company_address) }}">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_phone">Company Phone</label>
-                                        <input id="company_phone" type="text" class="form-control"
-                                            placeholder="fill company phone" name="company_phone"
-                                            value="{{ old('company_phone', $client->company_phone) }}" required>
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_website">Company Website</label>
-                                        <input id="company_website" type="text" class="form-control"
-                                            placeholder="fill company website" name="company_website"
-                                            value="{{ old('company_website', $client->company_website) }}">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_email">Company Email</label>
-                                        <input id="company_email" type="email" class="form-control"
-                                            placeholder="fill company email" name="company_email"
-                                            value="{{ old('company_email', $client->company_email) }}">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_fb_url">Company FB url</label>
-                                        <input id="company_fb_url" type="text" class="form-control"
-                                            placeholder="fill company fb url" name="company_fb_url"
-                                            value="{{ old('company_fb_url', $client->company_fb_url) }}">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="company_logo">Company Logo</label>
-                                        <input id="company_logo" type="file" class="form-control"
-                                            placeholder="fill company logo" name="company_logo">
-                                        @if($client->company_logo)
-                                        <img src="{{ asset('storage/' . $client->company_logo) }}" alt="Client Passport"
-                                        style="height: 100px; border: none; margin-top: 10px;">
-                                        @endif
-                                    </div>
-                                    <div class="form-group col-md-3">
                                         <label class="form-label" for="business_card">Business Card</label>
                                         <input id="business_card" type="file" class="form-control"
                                             placeholder="fill Business Card" name="business_card">
@@ -259,17 +226,6 @@
                                             placeholder="fill organizational logo" name="organizational_logo">
                                         @if($client->organizational_logo)
                                         <img src="{{ asset('storage/' . $client->organizational_logo) }}"
-                                            alt="Client Passport"
-                                            style="height: 100px; border: none; margin-top: 10px;">
-                                        @endif
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="organizational_business_card">Organizational
-                                            Business Card</label>
-                                        <input id="organizational_business_card" type="file" class="form-control"
-                                            placeholder="fill Business Card" name="organizational_business_card">
-                                        @if($client->organizational_business_card)
-                                        <img src="{{ asset('storage/' . $client->organizational_business_card) }}"
                                             alt="Client Passport"
                                             style="height: 100px; border: none; margin-top: 10px;">
                                         @endif

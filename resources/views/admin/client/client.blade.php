@@ -44,9 +44,9 @@
                                             <th>Client</th>
                                             <th style="text-align: center;">Designation</th>
                                             <th style="text-align: center;">Client Phone</th>
-                                            <th style="text-align: center;">Company Phone</th>
-                                            <th style="text-align: center;">Company Email</th>
-                                            <th style="text-align: center;">Company Website</th>
+                                            <th style="text-align: center;">Client Email</th>
+                                            <th style="text-align: center;">Company Name</th>
+                                            <th style="text-align: center;">Company Address</th>
                                             <th style="width: 10%">Action</th>
                                         </tr>
                                     </thead>
@@ -55,9 +55,9 @@
                                             <th>Client</th>
                                             <th style="text-align: center;">Designation</th>
                                             <th style="text-align: center;">Client Phone</th>
-                                            <th style="text-align: center;">Company Phone</th>
-                                            <th style="text-align: center;">Company Email</th>
-                                            <th style="text-align: center;">Company Website</th>
+                                            <th style="text-align: center;">Client Email</th>
+                                            <th style="text-align: center;">Company Name</th>
+                                            <th style="text-align: center;">Company Address</th>
                                             <th style="width: 10%">Action</th>
                                         </tr>
                                     </tfoot>
@@ -73,13 +73,9 @@
                                             </td>
                                             <td style="text-align: center;">{{ $client->client_designation}}</td>
                                             <td style="text-align: center;">{{ $client->client_phone}}</td>
-                                            <td style="text-align: center;">
-                                                {{ $client->company_phone ?? $client->organizational_phone_number }}
-                                            </td>
-                                            <td style="text-align: center;">
-                                                {{ $client->company_email ?? $client->organizational_email }}</td>
-                                            <td style="text-align: center;">
-                                                {{ $client->company_website ?? $client->organizational_website }}</td>
+                                            <td style="text-align: center;">{{ $client->client_email }}</td>
+                                            <td style="text-align: center;">{{ $client->company_name }}</td>
+                                            <td style="text-align: center;">{{ $client->company_address}}</td>
                                             <td style="text-align: center;">
                                                 <div class="form-button-action">
                                                     <a href="{{ route('client.edit', $client->id) }}"

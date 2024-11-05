@@ -38,11 +38,6 @@ class ClientController extends Controller
              'client_designation' => 'nullable|string|max:255',
              'company_name' => 'nullable|string|max:255',
              'company_address' => 'nullable|string|max:255',
-             'company_phone' => 'nullable|string',
-             'company_website' => 'nullable|string',
-             'company_email' => 'nullable|email',
-             'company_fb_url' => 'nullable|string',
-             'company_logo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
              'business_card' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
              'client_phone' => 'nullable|string',
              'client_email' => 'nullable|email',
@@ -59,7 +54,6 @@ class ClientController extends Controller
              'organizational_website' => 'nullable|string',
              'organizational_fb_url' => 'nullable|string',
              'organizational_logo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-             'organizational_business_card' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
              'organizational_other_documents' => 'nullable|file|mimes:pdf,doc,docx|max:2048',
              'contact_name' => 'nullable|string|max:255',
              'contact_designation' => 'nullable|string|max:255',
@@ -75,20 +69,17 @@ class ClientController extends Controller
 
          // Exclude file fields for bulk insert
          $data = $request->except([
-             'company_logo', 'business_card', 'client_passport_image', 'client_nid_image', 'documents',
-             'organizational_logo', 'organizational_business_card', 'organizational_other_documents',
-             'contact_business_card', 'contact_nid_image', 'contact_other_documents'
+             'business_card', 'client_passport_image', 'client_nid_image', 'documents','organizational_logo',
+             'organizational_other_documents', 'contact_business_card', 'contact_nid_image', 'contact_other_documents'
          ]);
 
          // Handle file uploads for each file field
          $fileFields = [
-             'company_logo' => 'uploads/company_logos',
              'business_card' => 'uploads/business_cards',
              'client_passport_image' => 'uploads/client_passports',
              'client_nid_image' => 'uploads/client_nids',
              'documents' => 'uploads/documents',
              'organizational_logo' => 'uploads/organizational_logos',
-             'organizational_business_card' => 'uploads/organizational_business_cards',
              'organizational_other_documents' => 'uploads/organizational_documents',
              'contact_business_card' => 'uploads/contact_business_cards',
              'contact_nid_image' => 'uploads/contact_nids',
@@ -140,11 +131,6 @@ class ClientController extends Controller
         'client_designation' => 'nullable|string|max:255',
         'company_name' => 'nullable|string|max:255',
         'company_address' => 'nullable|string|max:255',
-        'company_phone' => 'nullable|string',
-        'company_website' => 'nullable|string',
-        'company_email' => 'nullable|email',
-        'company_fb_url' => 'nullable|string',
-        'company_logo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         'business_card' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         'client_phone' => 'nullable|string',
         'client_email' => 'nullable|email',
@@ -161,7 +147,6 @@ class ClientController extends Controller
         'organizational_website' => 'nullable|string',
         'organizational_fb_url' => 'nullable|string',
         'organizational_logo' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-        'organizational_business_card' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         'organizational_other_documents' => 'nullable|file|mimes:pdf,doc,docx|max:2048',
         'contact_name' => 'nullable|string|max:255',
         'contact_designation' => 'nullable|string|max:255',
@@ -180,20 +165,18 @@ class ClientController extends Controller
 
     // Exclude file fields for bulk update
     $data = $request->except([
-        'company_logo', 'business_card', 'client_passport_image', 'client_nid_image', 'documents',
-        'organizational_logo', 'organizational_business_card', 'organizational_other_documents',
+        'business_card', 'client_passport_image', 'client_nid_image', 'documents',
+        'organizational_logo','organizational_other_documents',
         'contact_business_card', 'contact_nid_image', 'contact_other_documents'
     ]);
 
     // Handle file uploads for each file field
     $fileFields = [
-        'company_logo' => 'uploads/company_logos',
         'business_card' => 'uploads/business_cards',
         'client_passport_image' => 'uploads/client_passports',
         'client_nid_image' => 'uploads/client_nids',
         'documents' => 'uploads/documents',
         'organizational_logo' => 'uploads/organizational_logos',
-        'organizational_business_card' => 'uploads/organizational_business_cards',
         'organizational_other_documents' => 'uploads/organizational_documents',
         'contact_business_card' => 'uploads/contact_business_cards',
         'contact_nid_image' => 'uploads/contact_nids',
@@ -231,13 +214,11 @@ class ClientController extends Controller
 
         // Define the file fields and paths
         $fileFields = [
-            'company_logo',
             'business_card',
             'client_passport_image',
             'client_nid_image',
             'documents',
             'organizational_logo',
-            'organizational_business_card',
             'organizational_other_documents',
             'contact_business_card',
             'contact_nid_image',
