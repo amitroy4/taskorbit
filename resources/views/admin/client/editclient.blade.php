@@ -62,16 +62,6 @@
                                             value="{{ old('company_address', $client->company_address) }}">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label class="form-label" for="business_card">Business Card</label>
-                                        <input id="business_card" type="file" class="form-control"
-                                            placeholder="fill Business Card" name="business_card">
-                                        @if($client->business_card)
-                                        <img src="{{ asset('storage/' . $client->business_card) }}"
-                                            alt="Client Passport"
-                                            style="height: 100px; border: none; margin-top: 10px;">
-                                        @endif
-                                    </div>
-                                    <div class="form-group col-md-3">
                                         <label class="form-label" for="client_phone">Personal Phone</label>
                                         <input id="client_phone" type="text" class="form-control"
                                             placeholder="fill Client phone" name="client_phone"
@@ -84,10 +74,26 @@
                                             value="{{ old('client_email', $client->client_email) }}">
                                     </div>
                                     <div class="form-group col-md-3">
+                                        <label class="form-label" for="client_nid_number">NID Number</label>
+                                        <input id="client_nid_number" type="number" class="form-control"
+                                            placeholder="fill client nid number" name="client_nid_number"
+                                            value="{{ old('client_nid_number', $client->client_nid_number) }}">
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="form-label" for="client_mailing_address">Mailing Address</label>
                                         <textarea id="client_mailing_address" class="form-control"
                                             placeholder="fill client mailing address"
                                             name="client_mailing_address">{{ old('client_mailing_address', $client->client_mailing_address) }}</textarea>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="form-label" for="business_card">Business Card</label>
+                                        <input id="business_card" type="file" class="form-control"
+                                            placeholder="fill Business Card" name="business_card">
+                                        @if($client->business_card)
+                                        <img src="{{ asset('storage/' . $client->business_card) }}"
+                                            alt="Client Passport"
+                                            style="height: 100px; border: none; margin-top: 10px;">
+                                        @endif
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="client_passport_image">Passport Image</label>
@@ -98,12 +104,6 @@
                                             alt="Client Passport"
                                             style="height: 100px; border: none; margin-top: 10px;">
                                         @endif
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="form-label" for="client_nid_number">NID Number</label>
-                                        <input id="client_nid_number" type="number" class="form-control"
-                                            placeholder="fill client nid number" name="client_nid_number"
-                                            value="{{ old('client_nid_number', $client->client_nid_number) }}">
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label class="form-label" for="client_nid_image">NID Image</label>
