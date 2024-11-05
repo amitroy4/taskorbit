@@ -201,13 +201,13 @@
                         <div class="collapse" id="setup-nav">
                             <ul class="nav nav-collapse">
                                 <li>
-                                    <a href="{{route('company-information.index')}}">
+                                    <a href="{{route('companyinformation.index')}}">
                                         <i class="fa fa-info-circle"></i>
                                         <p>Company  Information</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{route('company-documents.index')}}">
+                                    <a href="{{route('companydocuments.index')}}">
                                         <i class="fa fa-file"></i>
                                         <p>Company Documents</p>
                                     </a>

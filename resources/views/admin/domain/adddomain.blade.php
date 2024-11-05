@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <form class="" action="#" method="POST" enctype="multipart/form-data">
+                            <form class="" action="{{route('domain.store')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @method("POST")
                                 <div class="row">
@@ -79,7 +79,7 @@
                                             <input id="reg_state" name="reg_state" type="text" class="form-control" placeholder="Enter State">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="form-label" for="zipcode">Zip Code</label>
+                                            <label class="form-label" for="reg_zipcode">Zip Code</label>
                                             <input id="reg_zipcode" name="reg_zipcode" type="text" class="form-control" placeholder="Enter Zip code">
                                         </div>
                                         <div class="form-group col-md-4">
@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label class="form-label">Address</label>
-                                            <textarea class="form-control" id="" name="reg_address" rows="2" placeholder="Enter address here"></textarea>
+                                            <textarea class="form-control" id="reg_address" name="reg_address" rows="2" placeholder="Enter address here"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -103,37 +103,37 @@
                                             <input id="personName" name="person_name" type="text" class="form-control" placeholder="Enter Name">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="form-label" for="email">Email</label>
-                                            <input id="email" name="email" type="email" class="form-control" placeholder="Enter Email">
+                                            <label class="form-label" for="person_email">Email</label>
+                                            <input id="person_email" name="person_email" type="email" class="form-control" placeholder="Enter Email">
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="form-label" for="phone">Phone Number</label>
-                                            <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter Phone Number">
+                                            <label class="form-label" for="person_phone">Phone Number</label>
+                                            <input id="person_phone" name="person_phone" type="text" class="form-control" placeholder="Enter Phone Number">
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="form-label" for="">Mailing Address</label>
-                                            <input id="" name="mailing_address" type="text" class="form-control" placeholder="Enter Mailing Address">
+                                            <label class="form-label" for="person_mailing_address">Mailing Address</label>
+                                            <input id="person_mailing_address" name="person_mailing_address" type="text" class="form-control" placeholder="Enter Mailing Address">
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="form-label" for="">Nid Number</label>
-                                            <input id="" name="nid_number" type="text" class="form-control" placeholder="Enter Nid Number">
+                                            <label class="form-label" for="person_nid_number">Nid Number</label>
+                                            <input id="person_nid_number" name="person_nid_number" type="text" class="form-control" placeholder="Enter Nid Number">
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label for="image" class="form-label">Person Image</label>
-                                            <input type="file" class="form-control" id="image" name="image">
+                                            <label for="person_image" class="form-label">Person Image</label>
+                                            <input type="file" class="form-control" id="person_image" name="person_image">
                                             <img id="img_preview" alt="Image Preview" width="100" class="mb-2 d-none mt-2">
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label for="image" class="form-label">Nid Image</label>
-                                            <input type="file" class="form-control" id="image" name="image">
+                                            <label for="person_nid_image" class="form-label">Nid Image</label>
+                                            <input type="file" class="form-control" id="person_nid_image" name="person_nid_image">
                                             <img id="img_preview" alt="Image Preview" width="100" class="mb-2 d-none mt-2">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-3">
-                                        <label for="currencyType">Currency Type</label>
-                                        <select id="currencyType" class="form-control" name="currency_type">
+                                        <label for="currency_type">Currency Type</label>
+                                        <select id="currency_type" class="form-control" name="currency_type">
                                             <option value="">Select Currency Type</option>
                                             <option value="usd">USD</option>
                                             <option value="bdt">BDT</option>
@@ -150,7 +150,6 @@
                                         <label for="amount">Amount</label>
                                         <input id="amount" type="number" class="form-control" placeholder="Enter Amount" name="amount">
                                     </div>
-
                                     <div class="form-group col-md-3">
                                             <label for="date">Renewal Date</label>
                                             <input id="renewal_date" name="renewal_date" type="date" class="form-control">

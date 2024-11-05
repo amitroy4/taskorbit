@@ -20,14 +20,19 @@ class Domain extends Model
         'reg_country',
         'reg_address',
         'person_name',
-        'email',
-        'phone',
-        'mailing_address',
-        'nid_number',
-        'person_image',
-        'nid_image',
+        'person_email',
+        'person_phone',
+        'person_mailing_address',
+        'person_nid_number',
         'currency_type',
         'rate',
+        'amount',
         'renewal_date',
+        'person_image',
+        'person_nid_image',
     ];
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
+    }
 }

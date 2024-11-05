@@ -17,11 +17,6 @@ return new class extends Migration
             $table->string('client_designation')->nullable();
             $table->string('company_name')->nullable();
             $table->string('company_address')->nullable();
-            $table->string('company_phone')->nullable();
-            $table->string('company_website')->nullable();
-            $table->string('company_email')->nullable();
-            $table->string('company_fb_url')->nullable();
-            $table->string('company_logo')->nullable();
             $table->string('business_card')->nullable();
             $table->string('client_phone')->nullable();
             $table->string('client_email')->nullable();
@@ -38,7 +33,6 @@ return new class extends Migration
             $table->string('organizational_website')->nullable();
             $table->string('organizational_fb_url')->nullable();
             $table->string('organizational_logo')->nullable();
-            $table->string('organizational_business_card')->nullable();
             $table->string('organizational_other_documents')->nullable();
             $table->string('contact_name')->nullable();
             $table->string('contact_designation')->nullable();

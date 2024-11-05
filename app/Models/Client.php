@@ -13,11 +13,6 @@ class Client extends Model
         'client_designation',
         'company_name',
         'company_address',
-        'company_phone',
-        'company_website',
-        'company_email',
-        'company_fb_url',
-        'company_logo',
         'business_card',
         'client_phone',
         'client_email',
@@ -34,7 +29,6 @@ class Client extends Model
         'organizational_website',
         'organizational_fb_url',
         'organizational_logo',
-        'organizational_business_card',
         'organizational_other_documents',
         'contact_name',
         'contact_designation',
@@ -47,4 +41,8 @@ class Client extends Model
         'contact_nid_image',
         'contact_other_documents',
     ];
+    public function domain()
+    {
+        return $this->hasMany(Domain::class);
+    }
 }
